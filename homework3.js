@@ -1,4 +1,4 @@
-//Nombre y Apellido:
+//Nombre y Apellido:Sofia Rizzo
 //Curso: 
 //Grupo
 //Taller de Programacion III
