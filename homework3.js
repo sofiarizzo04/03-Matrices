@@ -173,12 +173,26 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
+  if (n.toString()[0] === '9') {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí
+  if (arreglo.length === 0) {
+    return true;
+  }
+for (let i = 1; i < arreglo.length; i++) {
+    if (arreglo[i]!== arreglo[0]) {
+      return false; 
+    }
+  }
+  return true; 
 }
 
 function mesesDelAño(array) {
