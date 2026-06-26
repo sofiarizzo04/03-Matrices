@@ -116,11 +116,23 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+  let producto = 1;
+  if (arguments.length === 0) {
+    return 0;
+  } else if (arguments.length === 1) {
+    return arguments[0];
+  } else {
+    for (let i = 0; i < arguments.length; i++) {
+      producto *= arguments[i];
+    }
+    return producto;
+  }
 }
 
 function cuentoElementos(arreglo) {
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
+  
 }
 
 function diaDeLaSemana(numeroDeDia) {
