@@ -60,12 +60,14 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  return palabras.join(' ');
 }
 
 function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  return array.includes(elemento);
 }
 
 function agregarNumeros(numeros) {
