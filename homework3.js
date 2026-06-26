@@ -1,6 +1,6 @@
 //Nombre y Apellido:Sofia Rizzo
-//Curso: 
-//Grupo
+//Curso:6to B
+//Grupo:604
 //Taller de Programacion III
 //Departamento de Informatica - EESTn°1 - Raul Scalabrini Ortiz
 
@@ -10,23 +10,28 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  return array [0];
 }
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  return array [array.length - 1];
 }
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  return array.length;
 }
+
 
 function incrementarPorUno(array) {
   // "array" debe ser una matriz de enteros (int/integers)
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
