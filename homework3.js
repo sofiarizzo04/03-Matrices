@@ -238,6 +238,18 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  let array = [];
+  let suma = numero;
+
+  for (let i = 0; i < 10; i++) {
+    suma += 2;
+    if (suma === i) {
+      return "Se interrumpio la ejecucion";
+    }
+    array.push(suma);
+  }
+  return array;
+
 }
 
 function continueStatement(numero) {
@@ -247,24 +259,43 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  let array = [];
+  let suma = numero;
+
+  for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+      continue; 
+    }
+    suma += 2;
+    array.push(suma);
+  }
+  return array;
+
 }
 
 function buscarIndice(array, elemento) {
   // Usa el método `.indexOf` para devolver el índice de "elemento" dentro de "array".
   // Si el elemento no existe, devuelve -1.
-  // Tu código:
+  // Tu código: 
+  return array.indexOf(elemento);
+  if (array.indexOf(elemento) === -1) {
+    return -1;
+  }
 }
 
 function cortarArray(array, inicio, fin) {
   // Usa el método `.slice` para devolver una copia del array desde "inicio" hasta "fin" (sin incluir "fin").
   // No modificar el array original.
   // Tu código:
+  return array.slice(inicio, fin);
 }
 
 function eliminarElementos(array, inicio, cantidad) {
   // Usa el método `.splice` para eliminar "cantidad" elementos desde la posición "inicio".
   // Devuelve el array modificado.
   // Tu código:
+  return array.splice(inicio, cantidad);
+  return array;
 }
 
 function invertirArray(array) {
