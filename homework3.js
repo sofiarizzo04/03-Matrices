@@ -302,24 +302,32 @@ function invertirArray(array) {
   // Usa el método `.reverse` para invertir el orden de los elementos del array.
   // Devuelve el array invertido.
   // Tu código:
+  return array.reverse();
 }
 
 function unirArrays(array1, array2) {
   // Usa el método `.concat` para unir "array1" y "array2" en uno nuevo.
   // Devuelve el nuevo array sin modificar los originales.
   // Tu código:
+  return array1.concat(array2);
 }
 
 function duplicarElementos(array) {
   // "array" debe ser una matriz de enteros.
   // Usa el método `.map` para devolver un nuevo array con cada elemento multiplicado por 2.
-  // Tu código:
+  // Tu código: 
+  return array.map(function(num) {
+    return num * 2;
+  });
 }
 
 function imprimirElementos(array) {
   // Usa el método `.forEach` para imprimir (console.log) cada elemento del array.
   // No devuelve nada (undefined).
   // Tu código:
+  array.forEach(function(element) {
+    console.log(element);
+  });
 }
 
 // No modificar nada debajo de esta línea
